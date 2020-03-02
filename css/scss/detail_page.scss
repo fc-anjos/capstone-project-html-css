@@ -1,0 +1,231 @@
+@import "main";
+$actions-height: 10vh;
+
+.text-muted-alt {
+  color: $text-muted-alt;
+}
+
+body {
+  font-family: "open-sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+}
+
+.main-picture {
+  height: 50vh;
+  background: url(../resources/profile-6.jpg);
+  background-size: cover;
+  background-position: center center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+}
+
+.top-0 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.back-arrow {
+  font-size: 2.5rem;
+}
+
+.picture-count {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.picture-count > * {
+  width: 13px;
+  height: 13px;
+  margin-bottom: 5px;
+  background-color: #aaa;
+  border-radius: 3px;
+}
+
+.picture-count > *:nth-child(2) {
+  background-color: $secondary-color;
+}
+
+$actions-height: 100px;
+
+.actions {
+  height: $actions-height;
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -$actions-height/2;
+  right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions > * {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 5px;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.actions i {
+  color: $text-muted-alt;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 800;
+}
+
+.actions > *:hover {
+  transform: scale(1.2);
+}
+
+.actions > *:nth-child(2),
+.actions > *:nth-child(3) {
+  height: 70px;
+  width: 70px;
+}
+
+.actions > *:nth-child(2) {
+  background-color: $primary-color;
+  color: rgba($primary-color, 0.3);
+}
+
+.actions > *:nth-child(3) {
+  background-color: $secondary-color;
+  color: rgba($secondary-color, 0.3);
+}
+
+.profile-info {
+  margin-top: $actions-height/2;
+  padding: 0px 20px 20px 20px;
+  width: 90%;
+}
+
+.profile-info > * {
+  margin-bottom: 10px;
+}
+
+.first-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-info .kind-of {
+  font-size: 0.75rem;
+  color: $text-muted;
+  font-weight: 600;
+}
+
+.profile-info .actual-info {
+  font-size: 0.9rem;
+  color: $text-normal;
+}
+
+.sticky-top {
+  position: sticky;
+  padding-top: 20px;
+}
+
+header {
+  height: 80px; /* 64 + 16 */
+  position: sticky;
+  top: -16px;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+}
+
+header::before,
+header::after {
+  content: "";
+  display: block;
+  height: 16px;
+  position: sticky;
+}
+
+header::before {
+  top: 48px; /* 64 - 16 */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header::after {
+  background: linear-gradient(white, rgba(255, 255, 255, 0.3));
+  top: 0;
+  z-index: 2;
+}
+
+header > div {
+  height: 64px;
+  padding: 20px;
+  position: sticky;
+  top: 0px;
+  margin-top: -16px;
+  z-index: 3;
+}
+
+.gift {
+  display: flex;
+  padding: 20px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.gift-text {
+  margin-top: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gift-text .kind-of {
+  font-weight: 400;
+  color: #bbb;
+}
+
+.icon-holder {
+  height: 105px;
+  position: relative;
+  flex: 0 0 105px;
+  align-self: center;
+}
+
+.gift-icon {
+  height: 150px;
+  width: 150px;
+  background: url(../resources/icons.png) -380px 0px;
+  transform: scale(0.7) translate(-40%, -25%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gift-button {
+  height: 50px;
+  margin: 0 auto;
+  margin: 20px;
+  width: calc(100% - 40px);
+  border: 0;
+  background-color: $primary-color;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
