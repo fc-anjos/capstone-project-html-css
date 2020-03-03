@@ -1,15 +1,15 @@
-@import "main";
-$actions-height: 10vh;
+body {
+  font-family: "open-sans", sans-serif;
+}
 
 .text-muted-alt {
-  color: $text-muted-alt;
+  color: #bbb;
 }
 
 body {
   font-family: "open-sans", sans-serif;
   margin: 0;
   padding: 0;
-  height: 200vh;
 }
 
 .main-picture {
@@ -49,17 +49,15 @@ body {
 }
 
 .picture-count > *:nth-child(2) {
-  background-color: $secondary-color;
+  background-color: #f0916e;
 }
 
-$actions-height: 100px;
-
 .actions {
-  height: $actions-height;
+  height: 100px;
   width: 90%;
   margin: 0 auto;
   position: absolute;
-  bottom: -$actions-height/2;
+  bottom: -50px;
   right: 5%;
   display: flex;
   justify-content: space-between;
@@ -80,7 +78,7 @@ $actions-height: 100px;
 }
 
 .actions i {
-  color: $text-muted-alt;
+  color: #bbb;
   font-size: 2.5rem;
   margin: 0 auto;
   text-align: center;
@@ -98,22 +96,21 @@ $actions-height: 100px;
 }
 
 .actions > *:nth-child(2) {
-  background-color: $primary-color;
-  color: rgba($primary-color, 0.3);
+  background-color: #4e50b8;
+  color: rgba(78, 80, 184, 0.3);
 }
 
 .actions > *:nth-child(3) {
-  background-color: $secondary-color;
-  color: rgba($secondary-color, 0.3);
+  background-color: #f0916e;
+  color: rgba(240, 145, 110, 0.3);
 }
 
 .profile-info {
-  margin-top: $actions-height/2;
-  padding: 0px 20px 20px 20px;
-  width: 90%;
+  margin-top: 50px;
 }
 
 .profile-info > * {
+  padding: 0 20px 0 20px;
   margin-bottom: 10px;
 }
 
@@ -124,54 +121,18 @@ $actions-height: 100px;
 
 .profile-info .kind-of {
   font-size: 0.75rem;
-  color: $text-muted;
+  color: #888;
   font-weight: 600;
 }
 
 .profile-info .actual-info {
   font-size: 0.9rem;
-  color: $text-normal;
+  color: #444;
 }
 
 .sticky-top {
   position: sticky;
   padding-top: 20px;
-}
-
-header {
-  height: 80px; /* 64 + 16 */
-  position: sticky;
-  top: -16px;
-  z-index: 1;
-  -webkit-backface-visibility: hidden;
-}
-
-header::before,
-header::after {
-  content: "";
-  display: block;
-  height: 16px;
-  position: sticky;
-}
-
-header::before {
-  top: 48px; /* 64 - 16 */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-header::after {
-  background: linear-gradient(white, rgba(255, 255, 255, 0.3));
-  top: 0;
-  z-index: 2;
-}
-
-header > div {
-  height: 64px;
-  padding: 20px;
-  position: sticky;
-  top: 0px;
-  margin-top: -16px;
-  z-index: 3;
 }
 
 .gift {
@@ -222,10 +183,11 @@ header > div {
 .gift-button {
   height: 50px;
   margin: 0 auto;
-  margin: 20px;
-  width: calc(100% - 40px);
+  width: calc(100%);
   border: 0;
-  background-color: $primary-color;
+  background-color: #4e50b8;
   border-radius: 10px;
   font-size: 1.1rem;
 }
+
+/*# sourceMappingURL=person_detail.css.map */

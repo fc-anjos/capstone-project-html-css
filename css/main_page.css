@@ -18,7 +18,8 @@ header {
   justify-content: space-between;
   font-weight: 900;
   font-size: 3rem;
-  margin-bottom: 5vw;
+  margin-bottom: 20px;
+  height: 8vw;
 }
 
 .header-icon {
@@ -26,24 +27,38 @@ header {
   color: #444;
 }
 
+@media (min-width: 800px) {
+  header {
+    height: 64px;
+  }
+
+  .header-icon {
+    font-size: 64px;
+  }
+}
 header img {
-  height: 8vw;
+  position: relative;
+  top: 4px;
+  height: 90%;
 }
 
 .next-people {
   justify-content: space-between;
   width: 100%;
+  max-height: 300px;
 }
 
 .person {
   border-radius: 20px;
   flex: 1 0 calc(18% - 10px);
+  max-width: 100px;
   height: auto;
   margin: 5px;
 }
 
 .current-person {
   flex: 0.5 calc(10% - 10px);
+  max-width: 100px;
   margin: 5px;
 }
 

@@ -1,9 +1,8 @@
-body {
-  font-family: "open-sans", sans-serif;
-}
+@import "main";
+$actions-height: 10vh;
 
 .text-muted-alt {
-  color: #bbb;
+  color: $text-muted-alt;
 }
 
 body {
@@ -49,15 +48,17 @@ body {
 }
 
 .picture-count > *:nth-child(2) {
-  background-color: #f0916e;
+  background-color: $secondary-color;
 }
 
+$actions-height: 100px;
+
 .actions {
-  height: 100px;
+  height: $actions-height;
   width: 90%;
   margin: 0 auto;
   position: absolute;
-  bottom: -50px;
+  bottom: -$actions-height/2;
   right: 5%;
   display: flex;
   justify-content: space-between;
@@ -78,7 +79,7 @@ body {
 }
 
 .actions i {
-  color: #bbb;
+  color: $text-muted-alt;
   font-size: 2.5rem;
   margin: 0 auto;
   text-align: center;
@@ -96,17 +97,17 @@ body {
 }
 
 .actions > *:nth-child(2) {
-  background-color: #4e50b8;
-  color: rgba(78, 80, 184, 0.3);
+  background-color: $primary-color;
+  color: rgba($primary-color, 0.3);
 }
 
 .actions > *:nth-child(3) {
-  background-color: #f0916e;
-  color: rgba(240, 145, 110, 0.3);
+  background-color: $secondary-color;
+  color: rgba($secondary-color, 0.3);
 }
 
 .profile-info {
-  margin-top: 50px;
+  margin-top: $actions-height/2;
 }
 
 .profile-info > * {
@@ -121,13 +122,13 @@ body {
 
 .profile-info .kind-of {
   font-size: 0.75rem;
-  color: #888;
+  color: $text-muted;
   font-weight: 600;
 }
 
 .profile-info .actual-info {
   font-size: 0.9rem;
-  color: #444;
+  color: $text-normal;
 }
 
 .sticky-top {
@@ -185,9 +186,7 @@ body {
   margin: 0 auto;
   width: calc(100%);
   border: 0;
-  background-color: #4e50b8;
+  background-color: $primary-color;
   border-radius: 10px;
   font-size: 1.1rem;
 }
-
-/*# sourceMappingURL=detail_page.css.map */
