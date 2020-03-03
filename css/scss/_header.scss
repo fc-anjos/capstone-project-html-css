@@ -45,7 +45,7 @@ header .right .f-2 {
 @media screen and (min-width: 1024px) {
   header {
     padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px 10px;
     background-color: white;
     align-items: center;
   }
@@ -55,7 +55,7 @@ header .right .f-2 {
   }
 }
 
-.left i {
+header .left i {
   position: relative;
   top: 0.3rem;
   color: $text-muted;

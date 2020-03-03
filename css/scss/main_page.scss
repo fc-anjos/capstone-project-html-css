@@ -1,5 +1,6 @@
 @import "main";
 @import "header";
+
 $actions-height: 15vh;
 
 body {
@@ -10,9 +11,9 @@ main {
   display: flex;
   height: calc(100vh - #{$actions-height});
   flex-direction: column;
-  padding: 15px;
-  background-image: linear-gradient(#fff 50%, rgba(0, 0, 0, 0.07));
+  padding: 20px;
 }
+
 .next-people {
   justify-content: space-between;
   width: 100%;
