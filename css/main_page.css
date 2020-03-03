@@ -2,18 +2,6 @@ body {
   font-family: "open-sans", sans-serif;
 }
 
-body {
-  font-family: "open-sans", sans-serif;
-}
-
-main {
-  display: flex;
-  height: calc(100vh - 15vh);
-  flex-direction: column;
-  padding: 15px;
-  background-image: linear-gradient(#fff 50%, rgba(0, 0, 0, 0.07));
-}
-
 header {
   justify-content: space-between;
   font-weight: 900;
@@ -40,6 +28,18 @@ header img {
   position: relative;
   top: 4px;
   height: 90%;
+}
+
+body {
+  font-family: "open-sans", sans-serif;
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 15vh);
+  flex-direction: column;
+  padding: 15px;
+  background-image: linear-gradient(#fff 50%, rgba(0, 0, 0, 0.07));
 }
 
 .next-people {
