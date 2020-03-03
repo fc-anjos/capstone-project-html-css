@@ -1,5 +1,67 @@
 @import "colors";
+// Changing bootstrap breakpoints, base on: https://stackoverflow.com/questions/47747208/bootstrap-4-change-breakpoints
+// File: theme.scss
+// Override default BT variables:
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  // lg: 992px,
+    xl: 1200px,
+  xxl: 1900px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  // lg: 960px,
+    lg: 1024px,
+  xl: 1140px,
+  xxl: 1610px
+);
+
+// Import BT sources
+@import "../../node_modules/bootstrap/scss/bootstrap";
+// Your CSS (SASS) rules here...
 
 body {
   font-family: "open-sans", sans-serif;
+  color: $text-normal;
+}
+
+.text-muted-light-understroke {
+  border-bottom: 2px solid lighten($text-muted-light, 15);
+}
+
+.text-muted-understroke {
+  border-bottom: 2px solid lighten($text-muted, 2);
+}
+
+.light-grey-bg {
+  background-color: $light-grey;
+}
+
+.text-normal {
+  color: $text-normal;
+}
+
+.text-normal-light {
+  color: $text-normal-light;
+}
+
+.text-muted {
+  color: $text-muted;
+}
+
+.text-muted-light {
+  color: $text-muted;
+}
+
+.text-muted-alt {
+  color: $text-muted-alt;
+}
+
+.border-right-custom-muted-light {
+  border-right: 2px solid $text-muted-light;
 }

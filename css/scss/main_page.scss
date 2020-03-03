@@ -1,4 +1,5 @@
 @import "main";
+@import "header";
 $actions-height: 15vh;
 
 body {
@@ -12,35 +13,6 @@ main {
   padding: 15px;
   background-image: linear-gradient(#fff 50%, rgba(0, 0, 0, 0.07));
 }
-
-header {
-  justify-content: space-between;
-  font-weight: 900;
-  font-size: 3rem;
-  margin-bottom: 20px;
-  height: 8vw;
-}
-.header-icon {
-  font-size: 8vw;
-  color: $text-normal;
-}
-
-@media (min-width: 800px) {
-  header {
-    height: 64px;
-  }
-
-  .header-icon {
-    font-size: 64px;
-  }
-}
-
-header img {
-  position: relative;
-  top: 4px;
-  height: 90%;
-}
-
 .next-people {
   justify-content: space-between;
   width: 100%;
