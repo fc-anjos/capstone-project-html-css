@@ -69,6 +69,9 @@ body {
   box-shadow: rgba($secondary-color, 0.4) 0 0 8px 2px;
 }
 
+.primary-glow {
+  box-shadow: rgba($primary-color, 0.4) 0 0 8px 2px;
+}
 .inset-shadow {
   box-shadow: inset 0 0 2px 3px rgba(0, 0, 0, 0.1);
 }
@@ -79,6 +82,10 @@ body {
 
 .bg-primary-custom {
   background-color: $primary-color;
+}
+
+.fg-color-primary {
+  color: $primary-color;
 }
 
 .fg-color-secondary {

@@ -3,18 +3,29 @@
 @import "dashboard";
 
 main {
-  padding: 50px 50px 0;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding: 50px 50px 0;
+  }
+}
+
+.chat {
+  border-radius: 10px;
 }
 
 .chat .container-fluid {
   height: 100%;
+  padding: 0;
 }
 
 .row {
   height: 100%;
 }
 
-.chat-list {
+.chat-left {
   background-color: white;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -24,6 +35,7 @@ main {
 }
 
 .search {
+  height: 56px;
   display: flex;
   position: relative;
   border-bottom: 2px solid $grey;
@@ -47,27 +59,26 @@ main {
     z-index: 1;
     color: $text-muted-light;
   }
+}
 
-  .write {
-    background-color: $primary-color;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    border: 0;
+.primary-button {
+  background-color: $primary-color;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
     // position: relative;
-
-    i {
-      position: relative;
-      top: 3px;
-      right: 3px;
-      font-size: 1.2rem;
-      line-height: 1rem;
-    }
+    font-size: 1.2rem;
+    line-height: 1rem;
   }
 }
 
 .chat-detail {
-  background-color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   flex-basis: 60%;
@@ -77,6 +88,7 @@ main {
   overflow-y: scroll;
   padding-left: 5px;
   padding-right: 15px;
+  border-bottom: 1px solid white;
 }
 
 .contact-card {
@@ -113,6 +125,26 @@ main {
   }
 }
 
+@media (max-width: 1024px) {
+  .contacts,
+  .chat-left,
+  .chat {
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  .contacts {
+    height: 90vh;
+  }
+  .contact-card {
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 0 5px 5px;
+    padding: 15px 10px;
+  }
+}
+
 .parent {
   display: flex;
   flex-wrap: nowrap;
@@ -120,4 +152,128 @@ main {
 
 .w-60-100 {
   flex: 1 0;
+}
+
+.chat-bottom {
+  // position: absolute;
+  // bottom: 0;
+  height: 60px;
+  background-color: red;
+}
+
+.chat-bottom-button {
+  border: 0;
+  // border-right: 1px solid #eee;
+  // border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
+  flex-grow: 1;
+  background-color: white;
+}
+
+.chat-bottom-button:nth-child(1) {
+  border-right: 1px solid #eee;
+}
+
+.chat-bottom-button:nth-child(2) {
+  border-right: 1px solid #eee;
+}
+
+.chat-bottom-button:nth-child(1) {
+  border-right: 1px solid #eee;
+}
+
+.chat-bottom-button:hover {
+  background-image: linear-gradient(#f9f9f9, #fff);
+}
+
+.chat-bottom .selected {
+  background-image: linear-gradient(#f9f9f9, #fff);
+  border-top: 2px solid $primary-color;
+  border-bottom: 1px solid #eee;
+}
+
+.chat-detail {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.chat-detail-top {
+  height: 72px;
+  background-color: white;
+  border-top-right-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+
+  .text-small {
+    font-size: 0.8rem;
+  }
+
+  i {
+    font-size: 2rem;
+  }
+}
+
+.chat-detail-middle {
+}
+
+.chat-detail-bottom {
+  flex: 0 0 120px;
+  background-color: white;
+  box-shadow: 0 -40px 40px -40px rgba(0, 0, 0, 0.08);
+  align-items: center;
+
+  i {
+    flex-shrink: 1;
+    flex-grow: 0;
+    font-size: 2rem;
+  }
+
+  .input {
+    flex-grow: 1;
+  }
+
+  .primary-button {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    i {
+      position: static;
+    }
+  }
+}
+
+.your-message {
+  width: 100%;
+  height: 3rem;
+  border: 0;
+  background-color: $light-grey;
+  border-radius: 10px;
+  border: 3px solid #eee;
+  padding: 5px;
+  color: $text-normal-light;
+}
+
+.input-container {
+  margin: 0 15px;
+  position: relative;
+
+  .right {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+
+    i {
+      font-size: 1.4rem;
+      color: $text-muted-lighter;
+    }
+  }
+}
+
+.your-message::placeholder {
+  color: $text-muted;
 }
