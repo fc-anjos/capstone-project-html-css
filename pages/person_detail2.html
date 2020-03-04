@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Import Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Import Google Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Import specific Stylesheet -->
+    <link rel="stylesheet" href="../css/person_detail2.css" />
+
+    <title>Swipex - This application for dating</title>
+  </head>
+  <body class="light-grey-bg">
+    <header class="d-lg-flex d-none text-normal-light">
+      <!-- LG display only -->
+      <div class="d-none d-lg-block left">
+        <i class="material-icons text-muted-light">
+          my_location
+        </i>
+        <span class="text-muted-light">Location:</span>
+        <span class="text-muted-light-understroke">London</span>
+      </div>
+
+      <!-- Small display only -->
+      <i class="d-lg-none material-icons header-icon ">
+        dehaze
+      </i>
+
+      <!-- All Displays -->
+      <img src="../resources/logo.png" alt="" />
+
+      <!-- Small display only -->
+      <i class="d-lg-none material-icons header-icon">
+        notifications_none
+      </i>
+
+      <!-- LG display only -->
+      <div class="d-none d-lg-block right text-muted-light">
+        <i class="material-icons pr-2">
+          list
+        </i>
+
+        <i class="material-icons border-right-custom-muted-light pr-3">
+          notifications_none
+        </i>
+        <i class="material-icons ml-3 f-2">
+          account_circle
+        </i>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row flex-nowrap">
+          <!-- DASHBOARD -->
+          <div class="dashboard d-none d-lg-block col-lg-4">
+            <div class="personal-info box-shadow p-3 bg-white">
+              <div class="first-block d-flex">
+                <div class="personal-info-left d-flex ">
+                  <img src="../resources/profile-me.jpg" alt="" />
+                  <div class="personal-info-text ml-3">
+                    <span class="d-block name">Vlad Ermakov</span>
+                    <span class="text-muted text-muted-underline-stroke"
+                      >Status:
+                      <b class="text-muted-light-understroke"
+                        >Without premium</b
+                      ></span
+                    >
+                  </div>
+                </div>
+                <i class="material-icons">settings</i>
+              </div>
+              <div class="second-block mt-3 d-flex">
+                <div class="likes pr-2">
+                  <i class="material-icons">favorite</i>
+                  257
+                </div>
+                <button class="text-white inset-shadow">
+                  <i class="material-icons text-white button-icon">
+                    verified_user
+                  </i>
+                  Get Premium
+                </button>
+              </div>
+            </div>
+
+            <!-- DASHBOARD BOTTOM-PART -->
+            <div class="bottom-part text-muted-light">
+              <div class="d-flex">
+                <i class="material-icons">
+                  blur_on
+                </i>
+                <span>Begin Encounters</span>
+              </div>
+
+              <div class="d-flex">
+                <i class="material-icons">
+                  layers
+                </i>
+                <span>People Nearby</span>
+              </div>
+
+              <div class="d-flex">
+                <i class="material-icons">
+                  live_tv
+                </i>
+                <span>Live Channels</span>
+                <div class="right-side live-channels">
+                  12
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <i class="material-icons">
+                  message
+                </i>
+                <span>Messages</span>
+                <div class="right-side bg-secondary-custom secondary-glow">
+                  <span class="text-white">32</span>
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <i class="material-icons">
+                  star_border
+                </i>
+                <span>Featured People</span>
+              </div>
+
+              <div class="d-flex">
+                <i class="material-icons">
+                  card_giftcard
+                </i>
+                <span>Gifts</span>
+
+                <div
+                  class="right-side bg-secondary-custom fg-color-secondary secondary-glow"
+                >
+                  <span class="text-white">4</span>
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <i class="material-icons">
+                  trending_up
+                </i>
+                <span>Rating of Popularity</span>
+              </div>
+
+              <div class="d-flex">
+                <i class="material-icons">
+                  calendar_today
+                </i>
+                <span>Daily Tasks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PERSON DETAIL -->
+          <div class="detail d-flex flex-grow-1">
+            <div class="detail-left d-flex flex-column">
+              <div class="person-carroussel d-none d-lg-block"></div>
+              <div class="main-picture">
+                <div>
+                  <i class="top-0 back-arrow text-white material-icons "
+                    >arrow_back</i
+                  >
+                </div>
+                <div class="picture-count">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+
+                <div class="actions">
+                  <div><i class="material-icons ">navigate_before</i></div>
+                  <div><i class="material-icons text-white">favorite</i></div>
+                  <div><i class="material-icons text-white">clear</i></div>
+                  <div><i class="material-icons ">navigate_next</i></div>
+                </div>
+              </div>
+            </div>
+            <div class="detail-right">
+              NEED TO GET RID OF HEIGHT
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
