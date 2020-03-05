@@ -9162,10 +9162,12 @@ header .left i {
   margin-right: 10px;
 }
 
-.bottom-part > div {
+.bottom-part > a {
   align-items: center;
   margin-bottom: 30px;
   position: relative;
+  text-decoration: none;
+  color: #bbb;
 }
 
 .live-channels {

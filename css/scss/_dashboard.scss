@@ -80,10 +80,12 @@
   }
 }
 
-.bottom-part > div {
+.bottom-part > a {
   align-items: center;
   margin-bottom: 30px;
   position: relative;
+  text-decoration: none;
+  color: $text-muted-alt;
 }
 
 .live-channels {

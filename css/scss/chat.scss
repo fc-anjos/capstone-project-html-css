@@ -106,9 +106,12 @@ main {
   font-size: 2rem;
 }
 
+
+
 .contacts,
 .chat-detail-middle {
-  height: 75vh;
+  height: 65vh;
+  min-height: 430px;
   flex-grow: 1;
   flex-shrink: 1;
   overflow-y: scroll;
