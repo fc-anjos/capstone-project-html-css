@@ -1,6 +1,6 @@
 <!-- TITLE -->
 # SwipEx
-## A mobile application to find new acquaintaces.
+A mobile application to find new acquaintaces.
 >  An implementation of the [SwipEx app](https://www.behance.net/gallery/70285515/Swipex-This-application-for-dating), designed by [Vlad Ermakov](https://www.behance.net/ermalength) from [Fireart Studio](https://www.behance.net/fireart). built as part of Microverse's Full Stack Development program
 
 <!-- DESCRIPTION -->
