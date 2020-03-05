@@ -10,7 +10,8 @@ The project styling is done through [SASS](https://sass-lang.com/), organized in
 
 <!-- AUTHORS -->
 ## Check it online!
-[Live preview](https://raw.githack.com/fc-anjos/newsweek-clone/section-ordering/index.html)
+[Live preview](https://raw.githack.com/fc-anjos/capstone-project-html-css/social-network-dev/pages/chat.html)
+
 
 <!-- SCREENSHOT -->
 _Screenshot_
