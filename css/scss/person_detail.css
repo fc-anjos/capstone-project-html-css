@@ -9018,210 +9018,6 @@ body {
   max-width: 1500px;
 }
 
-header {
-  justify-content: space-between;
-  font-weight: 900;
-  height: 8vw;
-  font-size: 1rem;
-}
-
-.header-icon {
-  font-size: 8vw;
-  color: #444;
-}
-
-@media (min-width: 800px) {
-  header {
-    height: 64px;
-  }
-
-  .header-icon {
-    font-size: 64px;
-  }
-}
-header img {
-  position: relative;
-  top: 4px;
-  height: 90%;
-}
-
-header .left {
-  position: relative;
-  bottom: 5px;
-}
-
-header .right i {
-  color: #ccc;
-  font-size: 1.7rem;
-}
-
-header .right .f-2 {
-  position: relative;
-  top: 0.15rem;
-  font-size: 2rem;
-}
-
-@media screen and (min-width: 1024px) {
-  header {
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px 10px;
-    background-color: white;
-    align-items: center;
-  }
-
-  header img {
-    height: 40px;
-  }
-}
-header .left i {
-  position: relative;
-  top: 0.3rem;
-  color: #aaa;
-  background-color: rgba(0, 0, 0, 0.02);
-  border-radius: 3px;
-  padding: 5px;
-}
-
-.dashboard {
-  max-width: 350px;
-}
-
-.personal-info-text {
-  display: flex;
-  flex-direction: column;
-  font-size: 0.75rem;
-  font-weight: 700;
-  justify-content: space-between;
-}
-.personal-info-text b {
-  color: #4e50b8;
-}
-
-.first-block {
-  align-items: center;
-  height: 60px;
-  justify-content: space-between;
-}
-.first-block .name {
-  font-size: 0.95rem;
-}
-.first-block i {
-  color: #ccc;
-  font-size: 30px;
-}
-
-.personal-info {
-  border-radius: 10px;
-}
-.personal-info img {
-  border-radius: 10px;
-  flex: 0 0 50px;
-  height: 50px;
-}
-
-.second-block .likes {
-  align-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-right: 10px;
-}
-
-.second-block i {
-  color: #f0916e;
-  margin-right: 3px;
-}
-
-.second-block button {
-  background-color: #4e50b8;
-  border: 0;
-  border-radius: 5px;
-  flex-grow: 1;
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 5px;
-}
-.second-block button .button-icon {
-  font-size: 1rem;
-  line-height: 0.8rem;
-  position: relative;
-  top: 3px;
-}
-
-.bottom-part {
-  font-weight: 600;
-  margin-top: 50px;
-}
-.bottom-part i {
-  margin-right: 10px;
-}
-
-.bottom-part > div {
-  align-items: center;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.live-channels {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.right-side {
-  border-radius: 5px;
-  line-height: 0.9rem;
-  padding: 5px 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  width: 50px;
-}
-
-main {
-  padding: 0;
-}
-
-@media (min-width: 1024px) {
-  main {
-    padding: 50px 50px 0;
-  }
-}
-.detail {
-  min-height: 600px;
-  height: 80vh;
-}
-
-@media (max-width: 1024px) {
-  .detail {
-    height: 100%;
-  }
-}
-.detail-left {
-  flex-grow: 1.5;
-  min-width: 400px;
-  max-width: 700px;
-}
-
-@media (max-width: 1024px) {
-  .detail-left {
-    max-width: 100%;
-  }
-}
-.detail-right {
-  flex-grow: 1;
-}
-
-@media (max-width: 1024px) {
-  .detail {
-    flex-wrap: wrap;
-  }
-
-  .detail-right {
-    background-color: red;
-    width: 100%;
-    height: 100vh;
-  }
-}
 .text-muted-alt {
   color: #bbb;
 }
@@ -9232,12 +9028,8 @@ body {
   padding: 0;
 }
 
-.person-carroussel {
-  height: 80px;
-}
-
 .main-picture {
-  flex-grow: 1;
+  height: 50vh;
   background: url(../resources/profile-6.jpg);
   background-size: cover;
   background-position: center center;
@@ -9246,11 +9038,6 @@ body {
   position: relative;
 }
 
-@media (max-width: 1024px) {
-  .main-picture {
-    height: 70vh;
-  }
-}
 .top-0 {
   position: absolute;
   top: 10px;
@@ -9314,29 +9101,22 @@ body {
   font-weight: 800;
 }
 
-.button-action {
-  border: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.actions > .button-action:hover {
+.actions > *:hover {
   transform: scale(1.2);
 }
 
-.actions > .button-action:nth-child(2),
-.actions > .button-action:nth-child(3) {
+.actions > *:nth-child(2),
+.actions > *:nth-child(3) {
   height: 70px;
   width: 70px;
 }
 
-.actions > .button-action:nth-child(2) {
+.actions > *:nth-child(2) {
   background-color: #4e50b8;
   color: rgba(78, 80, 184, 0.3);
 }
 
-.actions > .button-action:nth-child(3) {
+.actions > *:nth-child(3) {
   background-color: #f0916e;
   color: rgba(240, 145, 110, 0.3);
 }
@@ -9426,4 +9206,4 @@ body {
   font-size: 1.1rem;
 }
 
-/*# sourceMappingURL=person_detail2.css.map */
+/*# sourceMappingURL=person_detail.css.map */

@@ -19,10 +19,14 @@ $container-max-widths: (
 @import "../../node_modules/bootstrap/scss/bootstrap";
 // Your CSS (SASS) rules here...
 
+button {
+  border: 0;
+}
+
 body {
   font-family: "open-sans", sans-serif;
   color: $text-normal;
-  padding: 0px;
+  padding: 0;
 }
 
 .text-muted-light-understroke {
@@ -72,6 +76,7 @@ body {
 .primary-glow {
   box-shadow: rgba($primary-color, 0.4) 0 0 8px 2px;
 }
+
 .inset-shadow {
   box-shadow: inset 0 0 2px 3px rgba(0, 0, 0, 0.1);
 }

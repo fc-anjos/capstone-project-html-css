@@ -1,0 +1,49 @@
+.next-people {
+  justify-content: space-between;
+  max-height: 300px;
+}
+
+.person {
+  border-radius: 10px;
+  flex: 1 0 calc(18% - 10px);
+  height: auto;
+  margin: 5px;
+}
+
+.current-person {
+  max-width: 100px;
+  flex: 1 0 calc(18% - 10px);
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .see-more {
+    justify-content: right;
+    position: relative;
+    left: 20px;
+    font-size: 2.5rem;
+  }
+
+  .close {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    background-color: $secondary-color;
+    opacity: 1;
+    border-radius: 50%;
+    position: relative;
+    right: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .person {
+    flex: 1 0 calc(10% - 10px);
+    max-width: 75px;
+  }
+
+  .current-person {
+    flex: 0.5 calc(10% - 10px);
+  }
+}
