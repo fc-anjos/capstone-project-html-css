@@ -8968,6 +8968,11 @@ body {
   color: #bbb;
 }
 
+.text-muted-alt:hover {
+  color: #bbb;
+  text-decoration: none;
+}
+
 .border-right-custom-muted-light {
   border-right: 2px solid #ccc;
 }
@@ -9164,10 +9169,8 @@ header .left i {
 
 .bottom-part > a {
   align-items: center;
-  margin-bottom: 30px;
   position: relative;
   text-decoration: none;
-  color: #bbb;
 }
 
 .live-channels {

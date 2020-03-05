@@ -61,6 +61,11 @@ body {
   color: $text-muted-alt;
 }
 
+.text-muted-alt:hover {
+  color: $text-muted-alt;
+  text-decoration: none;
+}
+
 .border-right-custom-muted-light {
   border-right: 2px solid $text-muted-light;
 }
