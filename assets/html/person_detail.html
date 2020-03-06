@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Import Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Import Google Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Import specific Stylesheet -->
+    <link rel="stylesheet" href="../css/person_detail.css" />
+
+    <title>Swipex - This application for dating</title>
+  </head>
+  <body class="light-grey-bg">
+    <header class="d-lg-flex d-none text-normal-light">
+      <!-- LG display only -->
+      <div class="d-none d-lg-block left">
+        <i class="material-icons text-muted-light">
+          my_location
+        </i>
+        <span class="text-muted-light">Location:</span>
+        <span class="text-muted-light-understroke">London</span>
+      </div>
+
+      <!-- Small display only -->
+      <i class="d-lg-none material-icons header-icon ">
+        dehaze
+      </i>
+
+      <!-- All Displays -->
+      <img src="../resources/logo.png" alt="" />
+
+      <!-- Small display only -->
+      <i class="d-lg-none material-icons header-icon">
+        notifications_none
+      </i>
+
+      <!-- LG display only -->
+      <div class="d-none d-lg-block right text-muted-light">
+        <i class="material-icons pr-2">
+          list
+        </i>
+
+        <i class="material-icons border-right-custom-muted-light pr-3">
+          notifications_none
+        </i>
+        <i class="material-icons ml-3 f-2">
+          account_circle
+        </i>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row flex-nowrap">
+          <!-- DASHBOARD -->
+          <div class="dashboard d-none d-lg-block col-lg-4">
+            <div class="personal-info box-shadow p-3 bg-white">
+              <div class="first-block d-flex">
+                <div class="personal-info-left d-flex ">
+                  <img src="../resources/profile-me.jpg" alt="" />
+                  <div class="personal-info-text ml-3">
+                    <span class="d-block name">Vlad Ermakov</span>
+                    <span class="text-muted text-muted-underline-stroke"
+                      >Status:
+                      <b class="text-muted-light-understroke"
+                        >Without premium</b
+                      ></span
+                    >
+                  </div>
+                </div>
+                <i class="material-icons">settings</i>
+              </div>
+              <div class="second-block mt-3 d-flex">
+                <div class="likes pr-2">
+                  <i class="material-icons">favorite</i>
+                  257
+                </div>
+                <button class="text-white inset-shadow">
+                  <i class="material-icons text-white button-icon">
+                    verified_user
+                  </i>
+                  Get Premium
+                </button>
+              </div>
+            </div>
+
+            <!-- DASHBOARD BOTTOM-PART -->
+
+            <div class="bottom-part text-muted-light">
+              <a href="person_detail.html" class="text-muted-alt mb-4 d-flex">
+                <i class="material-icons">
+                  blur_on
+                </i>
+                <span>Begin Encounters</span>
+              </a>
+
+              <a href="#" class="text-muted-alt mb-4 d-flex">
+                <i class="material-icons">
+                  layers
+                </i>
+                <span>People Nearby</span>
+              </a>
+
+              <a href="#" class="text-muted-alt mb-4 d-flex">
+                <i class="material-icons">
+                  live_tv
+                </i>
+                <span>Live Channels</span>
+                <div class="right-side live-channels">
+                  12
+                </div>
+              </a>
+
+              <a href="chat.html" class="text-muted-alt mb-4 d-flex">
+                <i class="material-icons">
+                  message
+                </i>
+                <span>Messages</span>
+                <div class="right-side bg-secondary-custom secondary-glow">
+                  <span class="text-white">32</span>
+                </div>
+              </a>
+
+              <a href="#" class="text-muted-alt mb-4 d-flex">
+                <i class="material-icons">
+                  star_border
+                </i>
+                <span>Featured People</span>
+              </a>
+
+              <a href="#" class="text-muted-alt mb-4 d-flex">
+                <i class="material-icons">
+                  card_giftcard
+                </i>
+                <span>Gifts</span>
+
+                <div
+                  class="right-side bg-secondary-custom fg-color-secondary secondary-glow"
+                >
+                  <span class="text-white">4</span>
+                </div>
+              </a>
+
+              <a href="#" class="text-muted-alt mb-4 d-flex">
+                <i class="material-icons">
+                  trending_up
+                </i>
+                <span>Rating of Popularity</span>
+              </a>
+
+              <a href="#" class="text-muted-alt mb-4 d-flex">
+                <i class="material-icons">
+                  calendar_today
+                </i>
+                <span>Daily Tasks</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- PERSON DETAIL -->
+          <div class="detail d-flex flex-grow-1">
+            <div class="detail-left d-flex flex-column">
+              <div class="next-people d-none d-lg-flex">
+                <img src="../resources/profile-1.png" class="person" />
+                <div class="current-person"></div>
+                <img src="../resources/profile-2.png" class="person" />
+                <img src="../resources/profile-3.png" class="person" />
+                <img src="../resources/profile-4.png" class="person" />
+                <img src="../resources/profile-5.jpg" class="person" />
+                <img src="../resources/profile-5.jpg" class="person" />
+                <img src="../resources/profile-5.jpg" class="person" />
+                <img src="../resources/profile-5.jpg" class="person" />
+                <img src="../resources/profile-5.jpg" class="person" />
+                <img src="../resources/profile-5.jpg" class="person" />
+                <img src="../resources/profile-5.jpg" class="person" />
+                <img src="../resources/profile-5.jpg" class="person" />
+                <img src="../resources/profile-5.jpg" class="person" />
+                <img src="../resources/profile-5.jpg" class="person" />
+              </div>
+
+              <div class="main-picture">
+                <div>
+                  <i class="top-0 back-arrow text-white material-icons "
+                    >arrow_back</i
+                  >
+                </div>
+                <div class="picture-count">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+
+                <div class="actions">
+                  <button class="button-action">
+                    <i class="material-icons ">navigate_before</i>
+                  </button>
+                  <button class="button-action">
+                    <i class="material-icons text-white">favorite</i>
+                  </button>
+                  <button class="button-action">
+                    <i class="material-icons text-white">clear</i>
+                  </button>
+                  <button class="button-action">
+                    <i class="material-icons ">navigate_next</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="detail-right">
+              <div
+                class="p-20 d-none d-lg-block become-popular border-rounded-10 bg-lg-white mb-4 box-shadow"
+              >
+                <div class="d-flex">
+                  <div class="icon"></div>
+
+                  <div>
+                    <div class="title text-normal-light font-weight-bold">
+                      Become the popular
+                    </div>
+                    <div class="sub-title font-weight-bold text-muted-alt">
+                      Start receiving twice as many messages, likes and other
+                      things
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="mt-3 w-100 gift-button text-white bold flex-center"
+                >
+                  Purchase Package
+                </button>
+              </div>
+
+              <div
+                class="d-none d-lg-block filter-search p-20 border-rounded-10 bg-lg-white mb-4 box-shadow"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="title text-normal-light font-weight-bold">
+                    Filter search
+                  </div>
+                  <i class="fg-color-primary material-icons">
+                    filter_list
+                  </i>
+                </div>
+              </div>
+
+              <div class="profile-info bg-lg-white box-shadow">
+                <div
+                  class="d-lg-block d-flex justify-space-between first-block custom-sticky-top mt-2 pb-2 pt-2"
+                >
+                  <div class="border-bottom mb-lg-3 name order-0">
+                    <span class="d-block kind-of">Name Surname, Age</span>
+                    <span
+                      class="text-normal-light font-weight-bold title d-block actual-info"
+                      >Karina Simons, 23</span
+                    >
+                  </div>
+
+                  <div
+                    class="location order-1 d-flex justify-content-between align-items-center"
+                  >
+                    <div class="text">
+                      <span class="d-block kind-of">Location</span>
+                      <span class="d-block actual-info"> Poland, Warszawa</span>
+                    </div>
+                    <button class="d-none d-lg-flex primary-button">
+                      <i class="material-icons text-white">
+                        location_searching
+                      </i>
+                    </button>
+                  </div>
+                </div>
+                <div class="interests">
+                  <span class="d-block kind-of">Interests</span>
+                  <span class="d-block actual-info"
+                    >Cinema, Dinner with friends, shoes, make up, shopping,
+                    walks on the beach.</span
+                  >
+                </div>
+
+                <div class="languages">
+                  <span class="d-block kind-of">Languages</span>
+                  <span class="d-block actual-info"
+                    >English (conversational), Polish (native).
+                  </span>
+                </div>
+                <div>
+                  <div class="gift mt-4">
+                    <div class="icon-holder">
+                      <div class="gift-icon"></div>
+                    </div>
+                    <div class="gift-text">
+                      <span class="d-block actual-info bold mb-2"
+                        >Communicate with her.</span
+                      >
+                      <span class="d-block kind-of text-muted-alt mb-2"
+                        >Make a gift and you can immediately communicate</span
+                      >
+                    </div>
+                  </div>
+
+                  <button class="gift-button text-white bold flex-center">
+                    Give a gift
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

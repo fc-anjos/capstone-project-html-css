@@ -232,6 +232,7 @@ $actions-height: 100px;
 
 @media (max-width: 1024px) {
   .profile-info {
+    padding: 0 20px;
     margin-top: $actions-height/2;
 
     .kind-of {

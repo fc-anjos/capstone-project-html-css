@@ -37,8 +37,10 @@ body {
   border-bottom: 2px solid lighten($text-muted, 2);
 }
 
-.light-grey-bg {
-  background-color: $light-grey;
+@media (min-width: 1024px) {
+  .light-grey-bg {
+    background-color: $light-grey;
+  }
 }
 
 .text-normal {
@@ -70,8 +72,10 @@ body {
   border-right: 2px solid $text-muted-light;
 }
 
-.box-shadow {
-  box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px 10px;
+@media (min-width: 1024px) {
+  .box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px 10px;
+  }
 }
 
 .secondary-glow {
