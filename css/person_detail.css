@@ -9187,8 +9187,60 @@ header .left i {
   width: 50px;
 }
 
+.person,
+.current-person {
+  display: inline-block;
+}
+
+.person {
+  flex: 0 0 75px;
+  width: 75px;
+  height: auto;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.next-people {
+  height: 75px;
+  overflow-y: scroll;
+  flex-grow: 0;
+  flex-shrink: 1;
+  min-width: 0;
+  margin-bottom: 20px;
+}
+
+.current-person {
+  margin: 5px;
+  align-items: center;
+  position: relative;
+}
+.current-person .see-more {
+  justify-content: right;
+  position: relative;
+  left: 20px;
+  font-size: 2.5rem;
+}
+.current-person .close {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  background-color: #f0916e;
+  opacity: 1;
+  border-radius: 50%;
+  position: relative;
+  right: 28px;
+}
+
 main {
   padding: 0;
+}
+
+.detail {
+  min-width: 0;
+}
+
+.detail-left {
+  min-width: 0;
 }
 
 @media (min-width: 1024px) {
@@ -9209,6 +9261,7 @@ main {
 .detail-left {
   flex-grow: 1.5;
   flex-basis: 400px;
+  max-width: 700px;
 }
 
 @media (min-width: 1024px) {

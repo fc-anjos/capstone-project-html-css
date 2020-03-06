@@ -1,4 +1,5 @@
 *.css
+*.css.map
 *.json
 *.jpg
 *.png

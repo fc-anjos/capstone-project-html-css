@@ -1,9 +1,17 @@
 @import "main";
 @import "header";
 @import "dashboard";
-
+@import "carroussel";
 main {
   padding: 0;
+}
+
+// Override flex default behavior to allow shrinking past it's content width
+.detail {
+  min-width: 0;
+}
+.detail-left {
+  min-width: 0;
 }
 
 @media (min-width: 1024px) {
@@ -26,6 +34,7 @@ main {
 .detail-left {
   flex-grow: 1.5;
   flex-basis: 400px;
+  max-width: 700px;
 }
 
 @media (min-width: 1024px) {

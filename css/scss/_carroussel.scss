@@ -1,20 +1,27 @@
-.next-people {
-  justify-content: space-between;
-  max-height: 300px;
+.person,
+.current-person {
+  display: inline-block;
 }
 
 .person {
-  border-radius: 10px;
-  flex: 1 0 calc(18% - 10px);
+  flex: 0 0 75px;
+  width: 75px;
   height: auto;
-  margin: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.next-people {
+  height: 75px;
+  overflow-y: scroll;
+  flex-grow: 0;
+  flex-shrink: 1;
+  min-width: 0;
+  margin-bottom: 20px;
 }
 
 .current-person {
-  max-width: 100px;
-  flex: 1 0 calc(18% - 10px);
   margin: 5px;
-  display: flex;
   align-items: center;
   position: relative;
 
@@ -34,16 +41,5 @@
     border-radius: 50%;
     position: relative;
     right: 28px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .person {
-    flex: 1 0 calc(10% - 10px);
-    max-width: 75px;
-  }
-
-  .current-person {
-    flex: 0.5 calc(10% - 10px);
   }
 }
