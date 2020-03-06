@@ -1,0 +1,38 @@
+@mixin no-scroll-bar() {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 0;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-track {
+    width: 0;
+    height: 0;
+  }
+}
+
+@mixin thin-scroll-bar() {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0);
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+}

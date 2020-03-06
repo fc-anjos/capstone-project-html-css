@@ -1,0 +1,17 @@
+$primary-color: #4e50b8;
+$secondary-color: #f0916e;
+$tertiary-color: #414464;
+$text-muted-light: #ccc;
+$text-muted: #aaa;
+$text-muted-alt: #bbb;
+$text-normal: #444;
+$text-normal-light: #666;
+$text-muted-lighter: #ddd;
+$grey: #eee;
+$light-grey: #fcfcfc;
+
+@media (min-width: 1024px) {
+  .bg-lg-white {
+    background-color: white;
+  }
+}
