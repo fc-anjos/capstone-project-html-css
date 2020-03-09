@@ -21,7 +21,9 @@
   min-width: 0;
   margin-bottom: 20px;
 
+  /* stylelint-disable at-rule-no-unknown */
   @include thin-scroll-bar;
+  /* stylelint-enable at-rule-no-unknown */
 }
 
 .current-person {

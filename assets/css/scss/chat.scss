@@ -109,7 +109,11 @@ main {
 }
 
 .contacts {
+
+  /* stylelint-disable at-rule-no-unknown */
   @include no-scroll-bar;
+
+  /* stylelint-enable at-rule-no-unknown */
 }
 
 @media (max-width: 1024px) {
@@ -123,7 +127,11 @@ main {
 }
 
 .chat-detail-middle {
+
+  /* stylelint-disable at-rule-no-unknown */
   @include thin-scroll-bar();
+
+  /* stylelint-enable at-rule-no-unknown */
 }
 
 .contacts,

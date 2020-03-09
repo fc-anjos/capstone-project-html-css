@@ -1,4 +1,6 @@
+/* stylelint-disable at-rule-no-unknown */
 @mixin no-scroll-bar() {
+  /* stylelint-enable at-rule-no-unknown */
   scrollbar-width: none;
 
   &::-webkit-scrollbar {
@@ -17,7 +19,9 @@
   }
 }
 
+/* stylelint-disable at-rule-no-unknown */
 @mixin thin-scroll-bar() {
+  /* stylelint-enable at-rule-no-unknown */
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0);
 
