@@ -1,7 +1,7 @@
 "use strict"
 
 module.exports = {
-  "extends": "stylelint-config-recommended",
+  "extends": ["stylelint-config-recommended", "stylelint-config-sass-guidelines"],
   "rules": {
     "at-rule-empty-line-before": [ "always", {
       except: [
