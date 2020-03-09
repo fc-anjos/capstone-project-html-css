@@ -11,10 +11,14 @@ main {
 // Override flex default behavior to allow shrinking past it's content width
 .detail {
   min-width: 0;
+  min-height: 600px;
 }
 
 .detail-left {
   min-width: 0;
+  flex-grow: 1.5;
+  flex-basis: 400px;
+  max-width: 700px;
 }
 
 @media (min-width: 1024px) {
@@ -23,21 +27,10 @@ main {
   }
 }
 
-.detail {
-  min-height: 600px;
-  // height: 80vh;
-}
-
 @media (max-width: 1024px) {
   .detail {
     height: 100%;
   }
-}
-
-.detail-left {
-  flex-grow: 1.5;
-  flex-basis: 400px;
-  max-width: 700px;
 }
 
 @media (min-width: 1024px) {
