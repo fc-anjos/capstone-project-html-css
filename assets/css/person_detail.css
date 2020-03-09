@@ -9345,6 +9345,7 @@ body {
 }
 
 .main-picture {
+  display: flex;
   flex-grow: 1;
   background: url(../resources/profile-6.jpg);
   background-size: cover;
@@ -9352,6 +9353,10 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   position: relative;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
 }
 
 @media (max-width: 1024px) {
@@ -9401,12 +9406,17 @@ body {
   height: 100px;
   width: 90%;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
   bottom: -50px;
-  right: 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 450px;
+  align-self: flex-end;
+}
+.actions .before-button {
+  position: relative;
+  right: 5px;
 }
 
 .actions i {
