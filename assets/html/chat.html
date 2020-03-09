@@ -175,8 +175,9 @@
             <div class="container-fluid">
               <div class="row no-gutters">
                 <!-- CHAT LIST -->
-                <div class="parent w-100">
+                <div class="parent d-block d-lg-flex w-100">
                   <div
+                    id="chat-left"
                     class="chat-left d-flex flex-column flex-grow-1 flex-lg-grow-0"
                   >
                     <div class="top-small d-lg-none d-flex box-shadow">
@@ -186,9 +187,11 @@
 
                       <span class="win-title">Messages</span>
 
-                      <i class="search-icon material-icons win-title-icon">
-                        message
-                      </i>
+                      <a class="text-normal win-title-icon" href="#chat-detail">
+                        <i class="search-icon material-icons win-title-icon">
+                          message
+                        </i>
+                      </a>
                     </div>
 
                     <!-- SEARCH -->
@@ -514,24 +517,40 @@
                     </div>
                   </div>
                   <div
-                    class="chat-detail  d-none d-lg-flex flex-grow-1 flex-column"
+                    id="chat-detail"
+                    class="chat-detail  d-flex flex-grow-1 flex-column"
                   >
                     <div
                       class="chat-detail-top d-flex justify-content-between p-3"
                     >
-                      <i class="material-icons text-muted-alt">
+                      <a
+                        href="#chat-left"
+                        class="win-title-icon text-sm-normal d-lg-none"
+                      >
+                        <i class="material-icons text-muted-alt text-sm-normal">
+                          arrow_back
+                        </i>
+                      </a>
+
+                      <i
+                        class="material-icons order-2 order-lg-0 text-sm-normal d-lg-block text-muted-alt"
+                      >
                         phone
                       </i>
 
                       <div class="center">
-                        <span class="text-normal-light">Claudia Sinclair</span>
+                        <span class="text-normal-light text-sm-normal"
+                          >Claudia Sinclair</span
+                        >
                         <span
-                          class="d-block text-center text-muted-alt text-small"
+                          class="d-none d-lg-block text-center text-muted-alt text-small"
                           >online</span
                         >
                       </div>
 
-                      <i class="material-icons text-muted-alt">
+                      <i
+                        class="material-icons text-muted-alt d-none d-lg-block"
+                      >
                         more_horiz
                       </i>
                     </div>

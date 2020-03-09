@@ -45,6 +45,11 @@ body {
 
 .text-normal {
   color: $text-normal;
+
+  &:hover {
+    text-decoration: none;
+    color: $text-normal;
+  }
 }
 
 .text-normal-light {
@@ -61,11 +66,11 @@ body {
 
 .text-muted-alt {
   color: $text-muted-alt;
-}
 
-.text-muted-alt:hover {
-  color: $text-muted-alt;
-  text-decoration: none;
+  &:hover {
+    color: $text-muted-alt;
+    text-decoration: none;
+  }
 }
 
 .border-right-custom-muted-light {
@@ -135,4 +140,15 @@ body {
 .break {
   height: 0;
   flex-basis: 100%;
+}
+
+@media (max-width: 1024px) {
+  .text-sm-normal {
+    color: $text-normal;
+
+    &:hover {
+      color: $text-normal;
+      text-decoration: none;
+    }
+  }
 }

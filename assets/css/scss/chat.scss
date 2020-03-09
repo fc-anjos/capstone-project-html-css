@@ -105,10 +105,17 @@ main {
 
 .win-title-icon {
   font-size: 2rem;
+  height: 2rem;
 }
 
 .contacts {
   @include no-scroll-bar;
+}
+
+@media (max-width: 1024px) {
+  .chat-detail {
+    height: 100vh;
+  }
 }
 
 .chat-detail-middle {
@@ -184,8 +191,9 @@ main {
 }
 
 .parent {
-  display: flex;
   flex-wrap: nowrap;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .w-60-100 {
@@ -204,7 +212,7 @@ main {
   background-color: white;
 }
 
-.chat-bottom-button:nth-child(1) {
+.-bottom-button:nth-child(1) {
   border-right: 1px solid #eee;
 }
 

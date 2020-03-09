@@ -8952,6 +8952,10 @@ body {
 .text-normal {
   color: #444;
 }
+.text-normal:hover {
+  text-decoration: none;
+  color: #444;
+}
 
 .text-normal-light {
   color: #666;
@@ -8968,7 +8972,6 @@ body {
 .text-muted-alt {
   color: #bbb;
 }
-
 .text-muted-alt:hover {
   color: #bbb;
   text-decoration: none;
@@ -9041,6 +9044,15 @@ body {
   flex-basis: 100%;
 }
 
+@media (max-width: 1024px) {
+  .text-sm-normal {
+    color: #444;
+  }
+  .text-sm-normal:hover {
+    color: #444;
+    text-decoration: none;
+  }
+}
 header {
   justify-content: space-between;
   font-weight: 900;
@@ -9457,6 +9469,7 @@ main {
 
 .win-title-icon {
   font-size: 2rem;
+  height: 2rem;
 }
 
 .contacts {
@@ -9475,6 +9488,11 @@ main {
   height: 0;
 }
 
+@media (max-width: 1024px) {
+  .chat-detail {
+    height: 100vh;
+  }
+}
 .chat-detail-middle {
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0);
@@ -9555,8 +9573,9 @@ main {
   }
 }
 .parent {
-  display: flex;
   flex-wrap: nowrap;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .w-60-100 {
@@ -9575,7 +9594,7 @@ main {
   background-color: white;
 }
 
-.chat-bottom-button:nth-child(1) {
+.-bottom-button:nth-child(1) {
   border-right: 1px solid #eee;
 }
 
