@@ -1,4 +1,4 @@
-@import "colors";
+@import 'colors';
 // Changing bootstrap breakpoints, base on: https://stackoverflow.com/questions/47747208/bootstrap-4-change-breakpoints
 // File: theme.scss
 // Override default BT variables:
@@ -16,7 +16,7 @@ $container-max-widths: (
 );
 
 // Import BT sources
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import '../../node_modules/bootstrap/scss/bootstrap';
 // Your CSS (SASS) rules here...
 
 button {
@@ -24,8 +24,8 @@ button {
 }
 
 body {
-  font-family: "open-sans", sans-serif;
   color: $text-normal;
+  font-family: 'open-sans', sans-serif;
   padding: 0;
 }
 
@@ -47,8 +47,8 @@ body {
   color: $text-normal;
 
   &:hover {
-    text-decoration: none;
     color: $text-normal;
+    text-decoration: none;
   }
 }
 
@@ -118,11 +118,11 @@ body {
 }
 
 .primary-button {
-  background-color: $primary-color;
-  border-radius: 5px;
-  border: 0;
-  display: flex;
   align-items: center;
+  background-color: $primary-color;
+  border: 0;
+  border-radius: 5px;
+  display: flex;
   justify-content: center;
 
   i {
@@ -144,8 +144,8 @@ body {
 }
 
 .break {
-  height: 0;
   flex-basis: 100%;
+  height: 0;
 }
 
 @media (max-width: 1024px) {

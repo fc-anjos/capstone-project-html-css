@@ -1,8 +1,8 @@
-@import "main";
-@import "header";
-@import "dashboard";
-@import "carroussel";
-@import "scroll";
+@import 'main';
+@import 'header';
+@import 'dashboard';
+@import 'carroussel';
+@import 'scroll';
 
 main {
   padding: 0;
@@ -10,15 +10,15 @@ main {
 
 // Override flex default behavior to allow shrinking past it's content width
 .detail {
-  min-width: 0;
   min-height: 600px;
+  min-width: 0;
 }
 
 .detail-left {
-  min-width: 0;
-  flex-grow: 1.5;
   flex-basis: 400px;
+  flex-grow: 1.5;
   max-width: 700px;
+  min-width: 0;
 }
 
 @media (min-width: 1024px) {
@@ -35,11 +35,11 @@ main {
 
 @media (min-width: 1024px) {
   .detail-right {
+    flex-basis: 300px;
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 300px;
-    max-width: 400px;
     margin-left: 20px;
+    max-width: 400px;
   }
 }
 
@@ -49,9 +49,9 @@ main {
   }
 
   .detail-right {
-    width: 100%;
     height: 100vh;
     min-width: 0;
+    width: 100%;
   }
 
   .detail-left {
@@ -66,7 +66,7 @@ $actions-height: 10vh;
 }
 
 body {
-  font-family: "open-sans", sans-serif;
+  font-family: 'open-sans', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -76,39 +76,39 @@ body {
 }
 
 .main-picture {
-  display: flex;
-  flex-grow: 1;
+  align-content: center;
+  align-items: center;
   background: url(../resources/profile-6.jpg);
-  background-size: cover;
   background-position: center center;
+  background-size: cover;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  position: relative;
+  display: flex;
+  flex-grow: 1;
   justify-content: center;
   justify-items: center;
-  align-items: center;
-  align-content: center;
+  position: relative;
 }
 
 @media (max-width: 1024px) {
   .main-picture {
-    height: 70vh;
-    border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 70vh;
   }
 }
 
 @media (min-width: 1024px) {
   .main-picture {
-    border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 }
 
 .top-0 {
+  left: 10px;
   position: absolute;
   top: 10px;
-  left: 10px;
 }
 
 .back-arrow {
@@ -124,11 +124,11 @@ body {
 }
 
 .picture-count > * {
-  width: 13px;
-  height: 13px;
-  margin-bottom: 5px;
   background-color: #aaa;
   border-radius: 3px;
+  height: 13px;
+  margin-bottom: 5px;
+  width: 13px;
 }
 
 .picture-count > *:nth-child(2) {
@@ -138,16 +138,16 @@ body {
 $actions-height: 100px;
 
 .actions {
-  height: $actions-height;
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
+  align-items: center;
+  align-self: flex-end;
   bottom: -$actions-height/2;
   display: flex;
+  height: $actions-height;
   justify-content: space-between;
-  align-items: center;
+  margin: 0 auto;
   max-width: 400px;
-  align-self: flex-end;
+  position: relative;
+  width: 90%;
 
   .before-button {
     position: relative;
@@ -158,23 +158,23 @@ $actions-height: 100px;
 .actions i {
   color: $text-muted-alt;
   font-size: 2.5rem;
+  font-weight: 800;
   margin: 0 auto;
   text-align: center;
-  font-weight: 800;
 }
 
 .actions > .button-action {
-  height: 50px;
-  width: 50px;
+  align-items: center;
   background-color: white;
+  border: 0;
   border-radius: 10px;
-  color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px 5px;
+  color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 50px;
   transform: scale(1);
   transition: all 0.2s ease-in-out;
-  display: flex;
-  align-items: center;
-  border: 0;
+  width: 50px;
 }
 
 .actions > .button-action:hover {
@@ -205,13 +205,13 @@ $actions-height: 100px;
 
 .become-popular {
   .icon {
-    flex: 0 0 65px;
-    height: 60px;
-    width: 65px;
+    align-self: center;
     background-image: url(../resources/icons.png);
     background-size: 300px 150px;
-    align-self: center;
+    flex: 0 0 65px;
+    height: 60px;
     margin-right: 20px;
+    width: 65px;
   }
 
   .sub-title {
@@ -227,8 +227,8 @@ $actions-height: 100px;
 
 .kind-of {
   color: $text-muted;
-  font-weight: 600;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .actual-info {
@@ -238,16 +238,16 @@ $actions-height: 100px;
 
 @media (max-width: 1024px) {
   .profile-info {
-    padding: 0 20px;
     margin-top: $actions-height/2;
+    padding: 0 20px;
 
     .kind-of {
       font-size: 0.75rem;
     }
 
     .actual-info {
-      font-size: 0.9rem;
       color: $text-normal;
+      font-size: 0.9rem;
     }
   }
 }
@@ -258,8 +258,8 @@ $actions-height: 100px;
     padding: 20px;
 
     .primary-button {
-      width: 40px;
       height: 40px;
+      width: 40px;
 
       .material-icons {
         font-size: 1.4rem;
@@ -274,8 +274,8 @@ $actions-height: 100px;
 
 @media (max-width: 1024px) {
   .custom-sticky-top {
-    position: sticky;
     padding-top: 20px;
+    position: sticky;
   }
 }
 
@@ -289,47 +289,47 @@ $actions-height: 100px;
 }
 
 .gift-text {
-  margin-top: 20px;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .gift-text .kind-of {
-  font-weight: 400;
   color: #bbb;
+  font-weight: 400;
 }
 
 .icon-holder {
+  align-self: center;
+  flex: 0 0 105px;
   height: 105px;
   position: relative;
-  flex: 0 0 105px;
-  align-self: center;
 }
 
 .gift-icon {
-  height: 150px;
-  width: 150px;
   background: url(../resources/icons.png) -380px 0;
-  transform: scale(0.7) translate(-40%, -25%);
+  height: 150px;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
+  transform: scale(0.7) translate(-40%, -25%);
+  width: 150px;
 }
 
 .flex-center {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
 .gift-button {
+  background-color: $primary-color;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.1rem;
   height: 50px;
   margin: 0 auto;
   width: calc(100%);
-  border: 0;
-  background-color: $primary-color;
-  border-radius: 10px;
-  font-size: 1.1rem;
 }

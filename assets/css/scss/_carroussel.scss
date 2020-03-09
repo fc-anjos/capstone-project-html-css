@@ -1,4 +1,4 @@
-@import "scroll";
+@import 'scroll';
 
 .person,
 .current-person {
@@ -6,46 +6,47 @@
 }
 
 .person {
+  border-radius: 10px;
   flex: 0 0 75px;
-  width: 75px;
   height: auto;
   margin-right: 5px;
-  border-radius: 10px;
+  width: 75px;
 }
 
 .next-people {
-  height: 82px;
-  overflow-y: scroll;
-  flex-grow: 0;
-  flex-shrink: 1;
-  min-width: 0;
-  margin-bottom: 20px;
 
   /* stylelint-disable at-rule-no-unknown */
   @include thin-scroll-bar;
+
+  flex-grow: 0;
+  flex-shrink: 1;
+  height: 82px;
+  margin-bottom: 20px;
+  min-width: 0;
+  overflow-y: scroll;
   /* stylelint-enable at-rule-no-unknown */
 }
 
 .current-person {
-  margin: 5px;
   align-items: center;
+  margin: 5px;
   position: relative;
 
   .see-more {
-    justify-content: right;
-    position: relative;
-    left: 20px;
     font-size: 2.5rem;
+    justify-content: right;
+    left: 20px;
+    position: relative;
   }
 
   .close {
-    width: 20px;
-    height: 20px;
-    flex: 0 0 20px;
     background-color: $secondary-color;
-    opacity: 1;
     border-radius: 50%;
+    flex: 0 0 20px;
+    height: 20px;
+    opacity: 1;
     position: relative;
     right: 28px;
+    width: 20px;
   }
 }

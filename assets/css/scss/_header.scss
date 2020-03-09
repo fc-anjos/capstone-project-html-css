@@ -1,13 +1,13 @@
 header {
-  justify-content: space-between;
+  font-size: 1rem;
   font-weight: 900;
   height: 8vw;
-  font-size: 1rem;
+  justify-content: space-between;
 }
 
 .header-icon {
-  font-size: 8vw;
   color: $text-normal;
+  font-size: 8vw;
 }
 
 @media (min-width: 800px) {
@@ -21,14 +21,14 @@ header {
 }
 
 header img {
+  height: 90%;
   position: relative;
   top: 4px;
-  height: 90%;
 }
 
 header .left {
-  position: relative;
   bottom: 5px;
+  position: relative;
 }
 
 header .right i {
@@ -37,17 +37,17 @@ header .right i {
 }
 
 header .right .f-2 {
+  font-size: 2rem;
   position: relative;
   top: 0.15rem;
-  font-size: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
   header {
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px 10px;
-    background-color: white;
     align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px 10px;
+    padding: 20px;
   }
 
   header img {
@@ -56,10 +56,10 @@ header .right .f-2 {
 }
 
 header .left i {
-  position: relative;
-  top: 0.3rem;
-  color: $text-muted;
   background-color: rgb(0, 0, 0, 0.02);
   border-radius: 3px;
+  color: $text-muted;
   padding: 5px;
+  position: relative;
+  top: 0.3rem;
 }

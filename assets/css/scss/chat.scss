@@ -1,8 +1,8 @@
-@import "main";
-@import "header";
-@import "dashboard";
-@import "chat_detail";
-@import "scroll";
+@import 'main';
+@import 'header';
+@import 'dashboard';
+@import 'chat_detail';
+@import 'scroll';
 
 main {
   padding: 0;
@@ -28,69 +28,69 @@ main {
 }
 
 .chat-left {
-  flex-basis: 350px;
-  min-width: 300px;
+  background-color: white;
+  border-bottom-left-radius: 10px;
   border-right: 2px solid $grey;
   border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-color: white;
+  flex-basis: 350px;
+  min-width: 300px;
 }
 
 @media (max-width: 1024px) {
   .top-small,
   .bottom-small {
     align-items: center;
+    background-color: white;
     justify-content: space-between;
     padding: 20px;
-    background-color: white;
   }
 }
 
 .search {
-  position: relative;
+  border-bottom: 2px solid $grey;
   display: flex;
   height: 56px;
-  padding: 0 10px 10px 10px;
-  border-bottom: 2px solid $grey;
+  padding: 0 10px 10px;
+  position: relative;
 
   input {
+    border: 0;
+    color: $text-muted;
+    flex-grow: 1;
     font-size: 0.8rem;
     font-weight: 600;
-    flex-grow: 1;
-    min-width: 180px;
     height: 2rem;
+    min-width: 180px;
     padding-left: 30px;
-    color: $text-muted;
-    border: 0;
   }
 
   .search-icon {
+    color: $text-muted-light;
     font-size: 1.5rem;
     position: absolute;
-    z-index: 1;
     top: 5px;
-    color: $text-muted-light;
+    z-index: 1;
   }
 
   .primary-button {
     position: absolute;
-    top: 0;
     right: 15px;
+    top: 0;
   }
 }
 
 .bottom-small {
   .primary-button {
-    position: relative;
     bottom: 20px;
-    width: 50px;
-    height: 50px;
     box-shadow: rgba($primary-color, 0.4) 0 0 8px 2px;
+    height: 50px;
+    position: relative;
+    width: 50px;
   }
 
   .primary-button:hover {
-    transition: all 0.2s ease-in-out;
     transform: scale(1.3);
+    transition: all 0.2s ease-in-out;
   }
 
   .icon-big {
@@ -136,43 +136,43 @@ main {
 
 .contacts,
 .chat-detail-middle {
-  overflow-y: scroll;
+  border-bottom: 1px solid white;
   flex-grow: 1;
   flex-shrink: 1;
   height: 65vh;
   min-height: 430px;
-  padding-right: 15px;
+  overflow-y: scroll;
   padding-left: 5px;
-  border-bottom: 1px solid white;
+  padding-right: 15px;
 }
 
 .contact-card {
   align-items: center;
-  padding: 10px;
   border-bottom: 1px solid $grey;
+  padding: 10px;
 
   .middle-part {
     flex-grow: 1;
   }
 
   .contact-img {
+    border-radius: 10px;
     flex-basis: 0 1 50px;
     height: 50px;
     margin-right: 20px;
-    border-radius: 10px;
   }
 
   .contact-name {
+    flex-grow: 1;
     font-size: 0.8rem;
     font-weight: 600;
     position: relative;
-    flex-grow: 1;
 
     .right {
+      color: $text-muted-light;
       font-size: 0.7rem;
       position: absolute;
       right: 0;
-      color: $text-muted-light;
     }
   }
 
@@ -185,8 +185,8 @@ main {
   .contacts,
   .chat-left,
   .chat {
-    border-radius: 0;
     background-color: transparent;
+    border-radius: 0;
   }
 
   .contacts {
@@ -194,11 +194,11 @@ main {
   }
 
   .contact-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 0 5px 5px;
     margin: 10px;
     padding: 15px 10px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.05) 0 0 5px 5px;
   }
 }
 
@@ -213,15 +213,15 @@ main {
 }
 
 .chat-bottom {
-  height: 60px;
   background-color: red;
+  height: 60px;
 }
 
 .chat-bottom-button {
-  flex-grow: 1;
+  background-color: white;
   border: 0;
   border-top: 1px solid #eee;
-  background-color: white;
+  flex-grow: 1;
 }
 
 .-bottom-button:nth-child(1) {
@@ -237,7 +237,7 @@ main {
 }
 
 .chat-bottom .selected {
-  border-top: 2px solid $primary-color;
-  border-bottom: 1px solid #eee;
   background-image: linear-gradient(#f9f9f9, #fff);
+  border-bottom: 1px solid #eee;
+  border-top: 2px solid $primary-color;
 }
