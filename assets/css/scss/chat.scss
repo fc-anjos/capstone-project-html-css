@@ -28,7 +28,7 @@ main {
 }
 
 .chat-left {
-  background-color: white;
+  background-color: $white;
   border-bottom-left-radius: 10px;
   border-right: 2px solid $grey;
   border-top-left-radius: 10px;
@@ -40,7 +40,7 @@ main {
   .top-small,
   .bottom-small {
     align-items: center;
-    background-color: white;
+    background-color: $white;
     justify-content: space-between;
     padding: 20px;
   }
@@ -109,7 +109,6 @@ main {
 }
 
 .contacts {
-
   /* stylelint-disable at-rule-no-unknown */
   @include no-scroll-bar;
 
@@ -127,7 +126,6 @@ main {
 }
 
 .chat-detail-middle {
-
   /* stylelint-disable at-rule-no-unknown */
   @include thin-scroll-bar();
 
@@ -136,7 +134,7 @@ main {
 
 .contacts,
 .chat-detail-middle {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $white;
   flex-grow: 1;
   flex-shrink: 1;
   height: 65vh;
@@ -194,7 +192,7 @@ main {
   }
 
   .contact-card {
-    background-color: white;
+    background-color: $white;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.05) 0 0 5px 5px;
     margin: 10px;
@@ -213,12 +211,11 @@ main {
 }
 
 .chat-bottom {
-  background-color: red;
   height: 60px;
 }
 
 .chat-bottom-button {
-  background-color: white;
+  background-color: $white;
   border: 0;
   border-top: 1px solid #eee;
   flex-grow: 1;

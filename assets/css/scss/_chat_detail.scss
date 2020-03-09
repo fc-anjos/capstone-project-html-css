@@ -116,7 +116,7 @@
 
 .chat-detail-top {
   align-items: center;
-  background-color: white;
+  background-color: $white;
   border-bottom: 2px solid #eee;
   border-top-right-radius: 10px;
   font-size: 1.3rem;
@@ -139,7 +139,7 @@
 
 .chat-detail-bottom {
   align-items: center;
-  background-color: white;
+  background-color: $white;
   box-shadow: 0 -40px 40px -40px rgba(0, 0, 0, 0.08);
   flex: 0 0 120px;
 

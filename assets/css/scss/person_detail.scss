@@ -78,7 +78,7 @@ body {
 .main-picture {
   align-content: center;
   align-items: center;
-  background: url(../resources/profile-6.jpg);
+  background: url('../resources/profile-6.jpg');
   background-position: center center;
   background-size: cover;
   border-bottom-left-radius: 20px;
@@ -165,7 +165,7 @@ $actions-height: 100px;
 
 .actions > .button-action {
   align-items: center;
-  background-color: white;
+  background-color: $white;
   border: 0;
   border-radius: 10px;
   box-shadow: 0 0 10px 5px;
@@ -206,7 +206,7 @@ $actions-height: 100px;
 .become-popular {
   .icon {
     align-self: center;
-    background-image: url(../resources/icons.png);
+    background-image: url('../resources/icons.png');
     background-size: 300px 150px;
     flex: 0 0 65px;
     height: 60px;
