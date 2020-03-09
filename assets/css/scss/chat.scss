@@ -36,14 +36,14 @@ main {
   background-color: white;
 }
 
-.top-small,
-.bottom-small {
-  z-index: 1;
-  align-items: center;
-  justify-content: space-between;
-  height: 7vh;
-  padding: 20px;
-  background-color: white;
+@media (max-width: 1024px) {
+  .top-small,
+  .bottom-small {
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+  }
 }
 
 .search {
@@ -114,6 +114,10 @@ main {
 
 @media (max-width: 1024px) {
   .chat-detail {
+    height: 100vh;
+  }
+
+  .chat-left {
     height: 100vh;
   }
 }

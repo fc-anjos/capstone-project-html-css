@@ -19,6 +19,7 @@
 
   .message-card {
     margin: 0 10px;
+    z-index: 1;
   }
 
   .sender {
@@ -114,7 +115,6 @@
 }
 
 .chat-detail-top {
-  height: 72px;
   background-color: white;
   border-top-right-radius: 10px;
   font-size: 1.3rem;
@@ -129,6 +129,12 @@
   i {
     font-size: 2rem;
   }
+}
+
+@media (min-width: 1024px) {
+ .chat-detail-top {
+  height: 72px;
+}
 }
 
 .chat-detail-bottom {

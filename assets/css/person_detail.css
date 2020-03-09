@@ -8986,6 +8986,11 @@ body {
     box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px 10px;
   }
 }
+@media (max-width: 1024px) {
+  .box-shadow-sm {
+    box-shadow: rgba(0, 0, 0, 0.05) 0 0 40px 40px;
+  }
+}
 .secondary-glow {
   box-shadow: rgba(240, 145, 110, 0.4) 0 0 8px 2px;
 }

@@ -8986,6 +8986,11 @@ body {
     box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px 10px;
   }
 }
+@media (max-width: 1024px) {
+  .box-shadow-sm {
+    box-shadow: rgba(0, 0, 0, 0.05) 0 0 40px 40px;
+  }
+}
 .secondary-glow {
   box-shadow: rgba(240, 145, 110, 0.4) 0 0 8px 2px;
 }
@@ -9231,6 +9236,7 @@ header .left i {
 }
 .chat-detail-middle .message-card {
   margin: 0 10px;
+  z-index: 1;
 }
 .chat-detail-middle .sender {
   width: 45px;
@@ -9308,7 +9314,6 @@ header .left i {
 }
 
 .chat-detail-top {
-  height: 72px;
   background-color: white;
   border-top-right-radius: 10px;
   font-size: 1.3rem;
@@ -9323,6 +9328,11 @@ header .left i {
   font-size: 2rem;
 }
 
+@media (min-width: 1024px) {
+  .chat-detail-top {
+    height: 72px;
+  }
+}
 .chat-detail-bottom {
   flex: 0 0 120px;
   background-color: white;
@@ -9407,16 +9417,15 @@ main {
   background-color: white;
 }
 
-.top-small,
+@media (max-width: 1024px) {
+  .top-small,
 .bottom-small {
-  z-index: 1;
-  align-items: center;
-  justify-content: space-between;
-  height: 7vh;
-  padding: 20px;
-  background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+  }
 }
-
 .search {
   position: relative;
   display: flex;
@@ -9490,6 +9499,10 @@ main {
 
 @media (max-width: 1024px) {
   .chat-detail {
+    height: 100vh;
+  }
+
+  .chat-left {
     height: 100vh;
   }
 }
