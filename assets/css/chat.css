@@ -9195,6 +9195,12 @@ header .left i {
 .bottom-part i {
   margin-right: 10px;
 }
+.bottom-part .dash_action {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
 
 .bottom-part > a {
   align-items: center;

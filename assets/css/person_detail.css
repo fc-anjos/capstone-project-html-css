@@ -9195,6 +9195,12 @@ header .left i {
 .bottom-part i {
   margin-right: 10px;
 }
+.bottom-part .dash_action {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
 
 .bottom-part > a {
   align-items: center;
@@ -9405,7 +9411,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 450px;
+  max-width: 400px;
   align-self: flex-end;
 }
 .actions .before-button {
@@ -9481,10 +9487,12 @@ body {
 .kind-of {
   color: #aaa;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 .actual-info {
   color: #666;
+  font-size: 1rem;
 }
 
 @media (max-width: 1024px) {
